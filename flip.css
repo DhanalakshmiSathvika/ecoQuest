@@ -1,0 +1,66 @@
+:root {
+            --primary-color: #4CAF50;
+            --secondary-color: #FF9800;
+            --danger-color: #f44336;
+            --neutral-color: #189ee0;
+            --light-color: #f5f5f5;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #eceef1;
+            text-align: center;
+            padding: 20px;
+            background-image: url("tree.jpg");
+        }
+        .game-info {
+            display: flex;
+            justify-content: space-between;
+            max-width: 600px;
+            margin: 0 auto 20px;
+            padding: 10px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            
+        }
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+        .card {
+            background: var(--neutral-color);
+            color: white;
+            padding: 50px;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+            transition: transform 0.5s;
+        }
+        .card.flipped {
+            background: white;
+            color: black;
+        }
+        .hidden { display: none; }
+        .game-over {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+        #id{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            color:white;
+        }
+        #t{
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #18ed4d;
+        }

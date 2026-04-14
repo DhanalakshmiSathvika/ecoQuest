@@ -1,0 +1,95 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./final.jpg");
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 60px);
+    grid-template-rows: repeat(10, 60px);
+    gap: 2px;
+    border: 2px solid #333;
+    padding: 5px;
+    background-color: #ddd;
+}
+
+.cell {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #999;
+    background-color: #fff;
+    font-size: 24px;
+}
+
+.wall {
+    background-color: rgba(125, 6, 6, 0.827);
+    border: 1px solid #333;
+}
+
+.path {
+    background-color: #e9e9e9;
+}
+
+.player {
+    background-color: #ffeb3b;
+}
+
+.goal {
+    background-color: #4caf50;
+}
+
+.trash {
+    background-color: #d8d8d8;
+}
+
+.visited {
+    background-color: #bbdefb;
+}
+
+.status {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    text-align: center;
+    font-weight: bold;
+}
+
+#game-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
